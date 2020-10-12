@@ -1,0 +1,8 @@
+ mi_couch:
+  container_name: mi_couch
+  image: hyperledger/fabric-couchdb
+  volumes:
+      - "./couchdb/data:/opt/couchdb/data"
+      - "./local.ini:/opt/couchdb/etc/local.ini"
+  ports:
+  - "5984:5984"
